@@ -5,6 +5,12 @@ function increaseCount() {
   displayCount(); // Display the count
   checkCountValue(); // Check count value and display messages
 }
+
+function resetCount() {
+    count = 0;
+    displayCount();
+    alert("Followers Count has been reset to " + count);
+}
 function displayCount() {
 document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
 }
